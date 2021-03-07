@@ -6492,7 +6492,7 @@ The same constraints, as given for &apos;SurfaceOrSolidModel&apos;, &apos;Surfac
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Linear_Placement_2BSSvyDSzAhvG2y638nNlp" />
 					<Items>
 						<DocTemplateItem UniqueId="95af7069-609f-48fe-90fc-b07db503ef69">
-							<Documentation>DIstance can be measured along any physical element that has a representation featuring an IfcBoundedCurve that can be used as an Axis in IfcLinearPositioningElement.</Documentation>
+							<Documentation>Distance can be measured along any physical element that has a representation featuring an IfcBoundedCurve that can be used as an Axis in IfcLinearPositioningElement.</Documentation>
 						</DocTemplateItem>
 					</Items>
 				</DocTemplateUsage>
@@ -10078,8 +10078,11 @@ The following constraints apply to the 2D representation:
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Geometric_Representation_0J_MaK6jH1rBgPGHgUoLd" />
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="Relative Position" UniqueId="8e918ac9-7aee-483e-9ecb-7f31812f382b">
-					<Documentation>If</Documentation>
+					<Documentation>If the _IfcProduct_ _Product Placement_ is placed relative to an _IfcPositioningElement_ this relationship covers the information on which _IfcPositioningElement_ positions the _IfcProduct_.</Documentation>
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Product_Relative_Positioning_1jo2X5iK969AcbDz7acLTX" />
+					<Items>
+						<DocTemplateItem UniqueId="4eb24f5b-e24f-4cad-a595-065a86208773" RuleParameters="PositioningElement=IfcPositioningElement;" />
+					</Items>
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c05ec892-7ee3-4be3-a779-d9e51cbaa80d" Type="IfcProduct" />
