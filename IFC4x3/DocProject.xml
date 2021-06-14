@@ -23,7 +23,7 @@ Official schema publications for this release are at the following URLs:
 			<Documentation>This annex contains examples that implement this specification.</Documentation>
 		</DocAnnex>
 		<DocAnnex Name="Change logs" UniqueId="6e2c10a0-0f1b-4502-9182-9f376a374ff8">
-			<Documentation>This annex contains change logs comparing this release with prior releases.
+			<Documentation>This annex contains change log comparing this release with prior releases.
 
 #### Update Log
 Updates to this publication are described below.
