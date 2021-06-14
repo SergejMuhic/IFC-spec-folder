@@ -46,17 +46,16 @@ jobs:
           else
             echo 'Schema did not change.';
             echo ::set-output name=SCHEMACHANGED::false;
-          fi
-    
-    generate-schema:
-      runs-on: windows-latest
-      needs: filter
-      if: ${{ needs.filter_schema_modifications.outputs.schema_change == 'true' }}
-      defaults:
-        run:
-          shell: pwsh
-      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v2
-        - name: Verify the workspace context
-          run: echo 'Workspace directory is ${{ github.workspace }}'
+          fi   
+  generate-schema:
+    runs-on: windows-latest
+    needs: filter
+    if: ${{ needs.filter_schema_modifications.outputs.schema_change == 'true' }}
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Verify the workspace context
+        run: echo 'Workspace directory is ${{ github.workspace }}'
