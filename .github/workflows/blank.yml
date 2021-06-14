@@ -54,12 +54,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Verify the workspace context
+      - name: Run schema generation
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
           echo 'Home directory is $HOME'
           & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
-          dir
+          dir schema
           dir build
           dir IFC4x3
       - name: Upload schema
