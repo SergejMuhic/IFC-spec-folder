@@ -61,3 +61,4 @@ jobs:
           & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
           dir
           dir build
+          dir IFC4x3
