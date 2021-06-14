@@ -58,4 +58,4 @@ jobs:
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
           echo 'Home directory is $HOME'
-          & $cmnd "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}" -FE
+          & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}" -FE
