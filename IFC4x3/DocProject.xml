@@ -2,7 +2,7 @@
 <DocProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Annexes>
 		<DocAnnex Name="Computer interpretable listings" UniqueId="fd206c24-846c-4c23-bf1b-826c38309b2c" Code="IFC4">
-			<Documentation>This annex contains a listing of the complete EXPRESS schema combining all definitions of clauses 5, 6, 7, and 8 without comments or other explanatory text. These listings are available in computer-interpretable form that may be parsed by computer.
+			<Documentation>his annex contains a listing of the complete EXPRESS schema combining all definitions of clauses 5, 6, 7, and 8 without comments or other explanatory text. These listings are available in computer-interpretable form that may be parsed by computer.
 
 Official schema publications for this release are at the following URLs:
 
