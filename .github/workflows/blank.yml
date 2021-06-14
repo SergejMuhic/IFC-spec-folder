@@ -55,4 +55,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Verify the workspace context
-        run: echo 'Workspace directory is ${{ github.workspace }}'
+        run: |
+          echo 'Workspace directory is ${{ github.workspace }}'
+          echo 'Home directory is $HOME'
