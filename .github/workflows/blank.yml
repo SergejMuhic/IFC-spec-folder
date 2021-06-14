@@ -37,8 +37,10 @@ jobs:
       - name: Schema changes
         id: schema_changes #grep -o .xml files.json | wc -w (for counting multiple instances per line)
         run: |
-          count_props_quant_sets=$(egrep -ci DocProperty.xml|DocQuantity.xml $HOME/files.json)
-          count_xmls=$(grep -ciF .xml $HOME/files.json)
+          egrep -ci "DocProperty.xml|DocQuantity.xml" $HOME/files.json
+          count_props_quant_sets=$?
+          grep -ciF ".xml" $HOME/files.json
+          count_xmls=$?
           if [[ $HOME/files.json ]] && [[ $(($count_xmls-$count_props_quant_sets)) -gt 0 ]]; then
             echo 'Schema changed.';
             echo ::set-output name=SCHEMACHANGED::true;
