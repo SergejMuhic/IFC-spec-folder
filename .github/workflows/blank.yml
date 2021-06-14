@@ -60,3 +60,4 @@ jobs:
           echo 'Home directory is $HOME'
           & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
           dir
+          dir build
