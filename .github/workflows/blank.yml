@@ -49,7 +49,7 @@ jobs:
           fi   
   generate-schema:
     runs-on: windows-latest
-    needs: filter
+    needs: filter_schema_modifications
     if: ${{ needs.filter_schema_modifications.outputs.schema_change == 'true' }}
     defaults:
       run:
