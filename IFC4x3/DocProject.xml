@@ -20,7 +20,7 @@ Official schema publications for this release are at the following URLs:
 			<Documentation>This annex contains schema and instance diagrams.</Documentation>
 		</DocAnnex>
 		<DocAnnex Name="Examples" UniqueId="e2793a27-4484-4f4a-95eb-a7fa517b24be">
-			<Documentation>This annex contains examples that implement this specification.</Documentation>
+			<Documentation>This nnex contains examples that implement this specification.</Documentation>
 		</DocAnnex>
 		<DocAnnex Name="Change logs" UniqueId="6e2c10a0-0f1b-4502-9182-9f376a374ff8">
 			<Documentation>This annex contains change logs comparing this release with prior releases.
