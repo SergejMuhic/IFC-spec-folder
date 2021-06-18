@@ -19,7 +19,7 @@ jobs:
   # This workflow contains a single job called "build"
   generate-schema:
     runs-on: windows-latest
-    if: ${{ needs.filter_schema_modifications.outputs.schema_change == 'true' }}
+    if: ${{ filter-changes.filter_schema_modifications.outputs.schema_change == 'true' }}
     defaults:
       run:
         shell: pwsh
