@@ -56,10 +56,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Run schema generation
         env:
-          w-token: ${{ secrets.WORKFLOW }}
+          wtoken: ${{ secrets.WORKFLOW }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
         run: | # & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
-          gh auth login --with-token "$w-token"
+          gh auth login --with-token "$wtoken"
           gh workflow run schema-generation
       - name: Upload schema
         uses: actions/upload-artifact@v2
