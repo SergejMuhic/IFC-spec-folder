@@ -55,6 +55,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Run schema generation
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
           echo 'Home directory is $HOME'
