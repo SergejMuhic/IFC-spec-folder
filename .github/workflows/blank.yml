@@ -56,7 +56,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Run schema generation
         env:
-          github-token: ${{ secrets.WORKFLOW }}
+          workflow-token: ${{ secrets.WORKFLOW }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
           echo 'Home directory is $HOME'
@@ -64,7 +65,10 @@ jobs:
           dir schema
           dir build
           dir IFC4x3
+          gh auth login
+          gh auth login --with-token
           gh auth login --with-token github-token
+          gh auth login --with-token workflow-token
           gh workflow run schema-generation
       - name: Upload schema
         uses: actions/upload-artifact@v2
