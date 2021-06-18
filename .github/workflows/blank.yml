@@ -48,9 +48,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: filter_schema_modifications
     if: ${{ needs.filter_schema_modifications.outputs.schema_change == 'true' }}
-    defaults:
-      run:
-        shell: pwsh
+    # defaults:
+      # run:
+        # shell: pwsh
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
