@@ -64,7 +64,7 @@ jobs:
           dir schema
           dir build
           dir IFC4x3
-          gh auth login --with-token < github-token
+          gh auth login --with-token github-token
           gh workflow run schema-generation
       - name: Upload schema
         uses: actions/upload-artifact@v2
