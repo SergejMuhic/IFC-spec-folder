@@ -60,6 +60,7 @@ jobs:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
         run: | # & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FE
           gh auth login --with-token
+          $wtoken
       - name: Upload schema
         uses: actions/upload-artifact@v2
         with:
