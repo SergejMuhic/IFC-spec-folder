@@ -8,7 +8,7 @@ on:
   workflow_run:
     workflows: ["filter-changes"]
     branches: [main]
-    types: [requested]
+    types: [completed]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
