@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   generate-schema:
     runs-on: windows-latest
-    if: ${{ github.event.workflow_run.jobs.schema_changes.output.SCHEMACHANGED }}
+    if: ${{ github.event.workflow_run.jobs.filter_schema_modifications.outputs.schema_change == 'true' }}
     defaults:
       run:
         shell: pwsh
