@@ -5,10 +5,10 @@ name: schema-generation
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  workflow_run:
-    workflows: ["filter-changes"]
-    branches: [main]
-    types: [completed]
+  # workflow_run:
+    # workflows: ["filter-changes"]
+    # branches: [main]
+    # types: [completed]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   generate-schema:
     runs-on: windows-latest
-    if: ${{ github.event.workflow_run.jobs.filter_schema_modifications.outputs.schema_change == 'true' }}
+    # if: ${{ github.event.workflow_run.jobs.filter_schema_modifications.outputs.schema_change == 'true' }}
     defaults:
       run:
         shell: pwsh
