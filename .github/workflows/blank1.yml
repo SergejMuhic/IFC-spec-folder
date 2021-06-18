@@ -8,8 +8,7 @@ on:
   workflow_run:
     workflows: ["filter-changes"]
     branches: [main]
-    types:
-      -completed
+    types: [requested]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -19,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   generate-schema:
     runs-on: windows-latest
-    if: ${{ filter-changes.filter_schema_modifications.outputs.schema_change == 'true' }}
+    if: ${{ github.event.workflow_run.jobs.schema_changes.output.SCHEMACHANGED }}
     defaults:
       run:
         shell: pwsh
