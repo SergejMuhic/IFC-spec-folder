@@ -47,6 +47,7 @@ jobs:
           else
             echo 'Schema and properties did not change.';
             echo ::set-output name=SCHEMACHANGED::false;
+            echo ::set-output name=PROPSQUANTSCHANGED::false;
           fi   
   generate-schema:
     runs-on: ubuntu-latest
