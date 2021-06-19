@@ -36,5 +36,5 @@ jobs:
       - name: Upload schema
         uses: actions/upload-artifact@v2
         with:
-          name: IFCSchema
+          name: IFC Schema
           path: ${{ github.workspace }}\schema
