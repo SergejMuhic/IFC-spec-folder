@@ -1,1 +1,1 @@
-Condition that will trigger maintenance
+Condition at which maintenance is required or triggered

@@ -7,7 +7,7 @@ The following vertical segment types are defined:
 * line segment - _IfcAlignmentVerticalSegmentTypeEnum_ .LINE.
 * circular arc segment - _IfcAlignmentVerticalSegmentTypeEnum_ .ARC.
 * parabolic arc segment - _IfcAlignmentVerticalSegmentTypeEnum_ .PARABOLICARC. which can describe symmetric and unsymmetric parabolas
-* transition segment with linear curvature variation - _IfcAlignmentVerticalSegmentTypeEnum_ .CLOTHOID.
+* nonlinear/transition segment - _IfcAlignmentVerticalSegmentTypeEnum_ .NONLINEAR.
 
 For each vertical segment, the following non-redundant information is provided:
 

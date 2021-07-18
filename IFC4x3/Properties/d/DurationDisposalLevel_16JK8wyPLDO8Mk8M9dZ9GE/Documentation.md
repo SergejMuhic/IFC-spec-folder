@@ -1,1 +1,1 @@
-Duration interval at which disposal is performed
+Elapsed time for asset disposal

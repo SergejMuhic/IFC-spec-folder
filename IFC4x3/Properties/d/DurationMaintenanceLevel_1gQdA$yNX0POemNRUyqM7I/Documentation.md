@@ -1,1 +1,1 @@
-Duration interval at which maintenance is performed
+Elapsed time for planned maintained

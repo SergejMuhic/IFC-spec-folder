@@ -1,1 +1,1 @@
-Angle of approach for the vessel to the berth
+Angle of vessel approach

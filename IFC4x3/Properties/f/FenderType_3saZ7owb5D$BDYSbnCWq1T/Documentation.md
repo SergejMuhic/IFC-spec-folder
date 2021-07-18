@@ -1,1 +1,1 @@
-The type of fender
+Type of Fender

@@ -1,1 +1,1 @@
-Energy absorption capacity of the element
+Energy absorbed by the fender

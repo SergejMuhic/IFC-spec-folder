@@ -1,1 +1,1 @@
-Coefficient of friction value for the fender
+Coefficient Of friction value for the fender

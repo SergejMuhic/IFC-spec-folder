@@ -1,1 +1,1 @@
-Annual energy consumption requirement
+Annual energy requirement

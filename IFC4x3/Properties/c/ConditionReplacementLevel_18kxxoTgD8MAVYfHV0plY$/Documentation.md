@@ -1,1 +1,1 @@
-Condition that will trigger a replacement process
+Condition at which replacement is required or triggered

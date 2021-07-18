@@ -1,1 +1,1 @@
-Additional typing of a project
+Project Type

@@ -1,1 +1,1 @@
-The direction of flow of the cargo within the process.
+Processing direction

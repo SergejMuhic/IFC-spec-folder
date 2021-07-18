@@ -1,1 +1,1 @@
-Power demand of the element
+Power  demand

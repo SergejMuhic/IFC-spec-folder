@@ -1,1 +1,1 @@
-Performance level at which disposal takes place
+Target value at which disposal is triggered
