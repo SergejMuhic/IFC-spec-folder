@@ -11,7 +11,7 @@ Official schema publications for this release are at the following URLs:
 * **ifcXML Config**: [http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3_config.xml](http://www.buildingsmart-tech.org/ifc/review/IFC4x1/RC3/IFC4x1_RC3_config.xml){ target=&quot;_blank&quot;}</Documentation>
 		</DocAnnex>
 		<DocAnnex Name="Alphabetical listings" UniqueId="65e0182b-6622-4757-a3d9-77225e2cb119" Code="IFC4" Status="Candidate">
-			<Documentation>This annex contains listings of definitions an alphabetical order according to identifier and language-specific name.</Documentation>
+			<Documentation>This anne contains listings of definitions an alphabetical order according to identifier and language-specific name.</Documentation>
 		</DocAnnex>
 		<DocAnnex Name="Inheritance listings" UniqueId="89866beb-9946-4e73-875e-18545783f5c6">
 			<Documentation>This annex contains listings of entity definitions organized by inheritance.</Documentation>
