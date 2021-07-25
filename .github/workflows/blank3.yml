@@ -10,7 +10,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  generate-properties-listings:
+  generate-documentation:
     runs-on: windows-latest
     defaults:
       run:
@@ -21,7 +21,7 @@ jobs:
       - name: Run documentation generation
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
-          & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -D "${{ github.workspace }}\IFC4x3\documentation" "${{ github.workspace }}\IFC4x3\figures"
+          & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -D "${{ github.workspace }}\documentation" "${{ github.workspace }}\IFC4x3\figures"
           dir documentation
           dir IFC4x3
       - name: Upload documentation
