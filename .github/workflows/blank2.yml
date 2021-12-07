@@ -22,7 +22,6 @@ jobs:
         run: |
           echo 'Workspace directory is ${{ github.workspace }}'
           & "${{ github.workspace }}\build\IfcDocLite.exe" "${{ github.workspace }}\IFC4x3" -FP
-          dir IFC4x3
       - name: Upload property listings
         uses: actions/upload-artifact@v2
         with:
